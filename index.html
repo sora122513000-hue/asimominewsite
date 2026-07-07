@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>足もみwith｜足裏専門リラクゼーション</title>
+  <meta name="description" content="千葉市内の足裏専門リラクゼーションサロン 足もみwith。完全予約制。">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">ASHIMOMI with</div>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#course">COURSE</a>
+    <a href="#price">PRICE</a>
+    <a href="#tanio">TANIO</a>
+    <a href="#reserve">RESERVE</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="assets/videos/hero.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <p class="label">FOOT REFLEXOLOGY SALON</p>
+    <h1>足から、<br>身体を整える。</h1>
+    <p class="copy">千葉市内・完全予約制<br>足裏専門リラクゼーションサロン</p>
+    <div class="hero-actions">
+      <a class="btn reserve" href="https://reserva.be/20077540/reserve?mode=service_staff&search_evt_no=88eJwzszAzMzIDAAR2AUM" target="_blank">WEB予約</a>
+      <a class="btn line" href="https://lin.ee/VHqerVi" target="_blank">公式LINE</a>
+    </div>
+  </div>
+
+  <div class="hero-tanio">
+    <img src="assets/images/tanio/tanio-main.jpg" alt="たにお">
+    <div class="bubble">ようこそ！<br>たにおです😊</div>
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <div class="inner two-col">
+    <div>
+      <p class="label">ABOUT</p>
+      <h2>たにおが案内する、足もみwith。</h2>
+      <p>足もみwithは、足裏に特化した完全予約制リラクゼーションサロンです。詳細住所はご予約確定後にご案内します。</p>
+    </div>
+    <img class="round-img" src="assets/images/tanio/tanio-smile.jpg" alt="たにお笑顔">
+  </div>
+</section>
+
+<section id="course" class="section">
+  <div class="inner">
+    <p class="label">COURSE</p>
+    <h2>コースメニュー</h2>
+    <div class="cards">
+      <article><span>01</span><h3>通常コース</h3><strong>¥500</strong></article>
+      <article><span>02</span><h3>足裏中心コース</h3><strong>¥700</strong></article>
+      <article><span>03</span><h3>足和らぎコース</h3><strong>¥900</strong></article>
+      <article><span>04</span><h3>背中中心コース</h3><strong>¥1,100</strong></article>
+      <article><span>05</span><h3>全身もみほぐしコース</h3><strong>¥2,200</strong></article>
+      <article class="premium"><span>SPECIAL</span><h3>プレミアムコース</h3><strong>¥3,500</strong></article>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="section price">
+  <div class="inner">
+    <p class="label">PRICE</p>
+    <h2>料金システム</h2>
+    <div class="price-grid">
+      <div class="glass"><h3>施術時間</h3><p>20分 +¥0</p><p>30分 +¥250</p><p>40分 +¥500</p><p>50分 +¥750</p><p>60分 +¥1,000</p></div>
+      <div class="glass"><h3>力加減</h3><p>超ソフト +¥0</p><p>ソフト +¥0</p><p>スタンダード +¥0</p><p>ハード +¥0</p><p>ディープ +¥250</p><p>プレミアムディープ +¥500</p><p>アスリート +¥1,000</p><p>アルティメット +¥1,500</p></div>
+      <div class="glass"><h3>指名</h3><p>指名なし +¥0</p><p>指名あり +¥1,000〜¥15,000</p><p>予約時メッセージでお伝えください。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="simulator" class="section simulator">
+  <div class="inner sim-box">
+    <p class="label">SIMULATOR</p>
+    <h2>料金シミュレーター</h2>
+    <select id="courseSelect">
+      <option value="500">通常コース ¥500</option><option value="700">足裏中心コース ¥700</option><option value="900">足和らぎコース ¥900</option><option value="1100">背中中心コース ¥1,100</option><option value="2200">全身もみほぐしコース ¥2,200</option><option value="3500">プレミアムコース ¥3,500</option>
+    </select>
+    <select id="timeSelect">
+      <option value="0">20分 +¥0</option><option value="250">30分 +¥250</option><option value="500">40分 +¥500</option><option value="750">50分 +¥750</option><option value="1000">60分 +¥1,000</option>
+    </select>
+    <select id="powerSelect">
+      <option value="0">スタンダード +¥0</option><option value="250">ディープ +¥250</option><option value="500">プレミアムディープ +¥500</option><option value="1000">アスリート +¥1,000</option><option value="1500">アルティメット +¥1,500</option>
+    </select>
+    <select id="nominateSelect"><option value="0">指名なし +¥0</option><option value="1000">指名あり +¥1,000〜</option></select>
+    <div class="total">合計 <strong id="totalPrice">¥500</strong></div>
+  </div>
+</section>
+
+<section id="tanio" class="section tanio">
+  <div class="inner">
+    <p class="label">TANIO</p>
+    <h2>足もみwithの案内役。</h2>
+    <div class="tanio-gallery">
+      <img src="assets/images/tanio/tanio-main.jpg" alt="たにお">
+      <img src="assets/images/tanio/tanio-surprise.jpg" alt="たにお">
+      <img src="assets/images/tanio/tanio-smile.jpg" alt="たにお">
+    </div>
+  </div>
+</section>
+
+<section id="voice" class="section">
+  <div class="inner">
+    <p class="label">VOICE</p>
+    <h2>お客様の声</h2>
+    <div class="cards voice">
+      <article><h3>★★★★★</h3><p>足が軽くなりました。また利用したいです。</p></article>
+      <article><h3>★★★★★</h3><p>落ち着いた雰囲気でリラックスできました。</p></article>
+      <article><h3>★★★★★</h3><p>たにおが可愛くて印象に残りました。</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="inner">
+    <p class="label">FAQ</p>
+    <h2>よくある質問</h2>
+    <details><summary>予約は必要ですか？</summary><p>完全予約制です。WEBまたは公式LINEからご予約ください。</p></details>
+    <details><summary>住所はどこですか？</summary><p>千葉市内です。詳細住所はご予約確定後にご案内します。</p></details>
+    <details><summary>力加減は選べますか？</summary><p>超ソフトからアルティメットまでお選びいただけます。</p></details>
+  </div>
+</section>
+
+<section id="reserve" class="reserve-section">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="assets/videos/reserve.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="reserve-content">
+    <p class="label">RESERVATION</p>
+    <h2>足元から、今日を変える。</h2>
+    <div class="hero-actions">
+      <a class="btn reserve" href="https://reserva.be/20077540/reserve?mode=service_staff&search_evt_no=88eJwzszAzMzIDAAR2AUM" target="_blank">WEB予約</a>
+      <a class="btn line" href="https://lin.ee/VHqerVi" target="_blank">公式LINE</a>
+    </div>
+    <small>千葉市内・完全予約制 / 詳細住所は予約確定後にご案内</small>
+  </div>
+</section>
+
+</main>
+
+<div class="tanio-widget">
+  <div class="tanio-bubble" id="tanioBubble">予約は下のボタンから😊</div>
+  <button id="tanioBtn"><img src="assets/images/tanio/tanio-main.jpg" alt="たにお"></button>
+</div>
+
+<div class="fixed-cta">
+  <a href="https://reserva.be/20077540/reserve?mode=service_staff&search_evt_no=88eJwzszAzMzIDAAR2AUM" target="_blank">WEB予約</a>
+  <a href="https://lin.ee/VHqerVi" target="_blank">公式LINE</a>
+</div>
+
+<footer>© 2026 足もみwith / ASHIMOMI with</footer>
+
+</body>
+</html>
